@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Магазин товарів</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Магазин товарів</h1>
+
+  <div class="products">
+    <div class="product" data-id="1">
+      <h3>Акваріуми</h3>
+      <p>Ціна: 15000 грн</p>
+      <p>В наявності: <span class="stock">5</span></p>
+      <button onclick="addToCart(1)">Додати в корзину</button>
+    </div>
+    <div class="product" data-id="2">
+      <h3>Трансформери</h3>
+      <p>Ціна: 8000 грн</p>
+      <p>В наявності: <span class="stock">3</span></p>
+      <button onclick="addToCart(2)">Додати в корзину</button>
+    </div>
+  </div>
+
+  <h2>Корзина</h2>
+  <div id="cart">
+    <p>Корзина порожня.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
